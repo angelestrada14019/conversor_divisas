@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --negro: #000000;
+    --blanco: #FFFFFF;
+    --primary: rgba(51, 99, 255, 0.582);
+    --btn: rgb(61, 240, 54);
+    --btnHover: rgba(255, 0, 0, 0.596);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.8rem;
+    margin-bottom: 4rem;
+
+}
+
+img {
+    width: 25%;
+    margin-bottom: 3rem;
+}
+
+.contenedor {
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 85rem;
+    max-height: 80rem;
+    align-items: center;
+    padding: 4rem;
+    background-color: var(--primary);
+    border-radius: 2rem;
+    text-align: center;
+}
+
+#dinero,
+#moneda1,
+#moneda2 {
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#dinero {
+    padding: 1rem 2.5rem;
+    margin-bottom: 4rem;
+    border-style: none;
+}
+
+#btnConvertir {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    background-color: var(--btn);
+    width: 20rem;
+    font-size: 1.8rem;
+    color: var(--blanco);
+    font-weight: bold;
+}
+
+#btnConvertir:hover {
+    color: var(--negro);
+    background-color: var(--btnHover);
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+    .contenedor__select {
+        display: flex;
+        gap: 2rem;
+    }
+
+    .contenedor__select section {
+        display: flex;
+        gap: 1rem;
+    }
+
+    img {
+        width: 15%;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="contenedor">
+        <h1>Conversor de divisas</h1>
+        <img src="./img/imgDivisa.png" alt="Imagen Divisa">            
+                <div class="contenedor__cantDinero">
+                    <input
+                        type="text"
+                        name="dinero"
+                        id="dinero"
+                        placeholder="Cantidad de Dinero"
+                    />
+                </div>
+                <div class="contenedor__select">
+                    <section>
+                        <div>                            
+                            <select id="moneda1" required>
+                                <option disabled selected value="">
+                                    -- Elige tu moneda base --
+                                </option>
+                                <option value="0">Dolar</option>
+                                <option value="1">Peso Mexicano</option>
+                                <option value="2">Peso Colombiano</option>
+                                <option value="3">Euro</option>
+                                <option value="4">Libra Esterlina</option>
+                            </select>
+                        </div>
+                        <div>                            
+                            <select id="moneda2" required>
+                                <option disabled selected value="">
+                                    -- Elige moneda a Convertir --
+                                </option>
+                                <option value="0">Dolar</option>
+                                <option value="1">Peso Mexicano</option>
+                                <option value="2">Peso Colombiano</option>
+                                <option value="3">Euro</option>
+                                <option value="4">Libra Esterlina</option>
+                            </select>
+                        </div>
+
+                    </section>
+                    <div>
+                       <button id="btnConvertir">Convertir</button>
+                    </div>
+                </div>
+            
+        </div>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
